@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'add_task_screen.dart';
+import 'main.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -20,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            TaskHeaderWidget(),
             Expanded(
               child: ListView.builder(
                 itemCount: tasks.length,
